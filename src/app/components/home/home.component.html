@@ -1,0 +1,218 @@
+<!--header----------------------------->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner  ">
+        <div class=" img-container carousel-item active header-text ">
+            <img src="assets\images\flat-gde406a873_1920.jpg" class="d-block w-100 " alt="...">
+            <div class="carousel-caption  d-md-block position-absolute  bottom-0 top-0  start-0 header-layer">
+
+                <div class="header-text col-10 col-md-6">
+                    <h5>Buy Electronics Online Now In Egypt</h5>
+                    <p>Best prices on electronics is what makes it best purchase as you opt for online shopping. Sharaf
+                        among the top brands. </p>
+                    <div class="product-show">
+
+                        <button class="btn " routerLink="/products">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" img-container  carousel-item ">
+            <img src="assets\images\laptop-g4ffda6b16_1920.jpg" class="d-block w-100  " alt="...">
+            <div class="carousel-caption d-md-block position-absolute  bottom-0 top-0  start-0 header-layer">
+
+                <div class="header-text col-10 col-md-6">
+                    <h5>Buy Electronics Online Now In Egypt</h5>
+                    <p>Best prices on electronics is what makes it best purchase as you opt for online shopping. Sharaf
+                        among the top brands. </p>
+                    <div class="product-show">
+
+                        <button class="btn " routerLink="/products">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" img-container  carousel-item">
+            <img src="assets\images\technology-g89f162ec8_1920.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block position-absolute  bottom-0 top-0  start-0 header-layer ">
+                <div class="header-text col-10 col-md-6">
+                    <h5>Buy Electronics Online Now In Egypt</h5>
+                    <p>Best prices on electronics is what makes it best purchase as you opt for online shopping. Sharaf
+                        among the top brands. </p>
+                    <div class="product-show">
+                        <button class="btn " routerLink="/products">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+</div>
+
+
+<!--new arrival products-->
+<section class="container-fluide show-product">
+    <div class="container  ">
+        <h2 class="text-center mb-4 text-title">New Arrival Products</h2>
+        <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
+            <div class="col" *ngFor="let product of products.slice(0,3); ">
+                <div class="card ">
+                    <div class="d-flex justify-content-center img-container pt-5">
+                        <img src="https://project-storeelc.herokuapp.com/{{product.productImage}}" class="card-img-top" alt="..." style="width: 250px; height: 250px; ">
+                    </div>
+                    <div class="card-body row mt-3 card-content product-content">
+                        <div class="">
+                            <!-- <a routerLink='/products/{{product._id}}'> -->
+                            <a routerLink='/products/{{product._id}}'>
+                                <h5 class="card-title">{{product.name}}</h5>
+                            </a>
+                            <p class="card-text"> ${{product.price}}</p>
+                            <div class="d-flex justify-content-between">
+
+                                <button class="btn btn-primary" (click)="addToCart(product)">Add to cart</button>
+                                <button class="btn ">
+                                    <i  class="fa-regular fa-heart fav-icon"
+                                        (click)="addToWishList(product)"></i>
+                                    <!-- <i *ngIf="addedToWishList" class="fa-solid fa-heart fav-icon "
+                                        (click)="deleteWishListItem(product.id)"></i> -->
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--second section-->
+<section class="">
+    <section class="container mt-5  align-middle pb-5 pt-5 product-show">
+        <div class=" row justify-content-center ">
+            <div class="col-12 col-md-6   ">
+                <img class=" h-100" src="assets\images\81IiPYVh3fL._AC_SL1500_.jpg">
+            </div>
+            <div class="col-12 col-md-5 offset-md-1 d-flex align-items-center justify-content-md-center ">
+                <div class="">
+                    <h2 class="">IPAD AIR 2</h2>
+                    <p>5.6" Diagonal HD (1366 x 768) SVA BrightView Micro-edge WLED-backlit Display, 8GB DDR4 RAM, 256GB
+                        SSD
+                        AMD Quad-Core Ryzen 5 3500U Processor (Up to 3.70GHz, 4MB Cache), AMD Radeon Vega 8 Graphics.
+                    </p>
+                    <button class="btn" routerLink="/products">Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container  mt-3  align-middle pt-5 product-show">
+        <div class=" row justify-content-center">
+            <div class="col-12 col-md-5  d-flex align-items-center justify-content-md-center">
+                <div class="">
+                    <h2 class="">Android Tablet 10.1 Inch </h2>
+                    <p>Android 10.0 Tablet GMS Certified Android 10.0 operating system. No bloatware and unexpected ads,
+                        you can freely download any APP in the Google Play Store.
+                        Multi-Featured Tablet 1.6 GHz quad-core processor .</p>
+                    <button class="btn" routerLink="/products">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 offset-md-1 ">
+                <img class=" h-100" src="assets\images\51+umDJlcyL._AC_SL1500_.jpg ">
+            </div>
+
+        </div>
+    </section>
+</section>
+
+
+<!--section our services-------------------------------------->
+<section class="services">
+    <h4 class="text-center mb-4 text-title">Our Services</h4>
+    <div class="container my-container ">
+        <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4 text-center">
+            <div class="">
+                <div class="service">
+                    <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                    <div>
+                        <h6>ORDER ONLINE</h6>
+                        <p>A year after the first generation took the smartwatch world by storm with its timeless looks
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="service">
+                    <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <div>
+                        <h6>FREE SHIPPING</h6>
+                        <p>A year after the first generation took the smartwatch world by storm with its timeless looks
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="service">
+                    <div class="icon"><i class="fa-solid fa-arrow-rotate-left"></i></div>
+                    <div>
+                        <h6>30 DAYS RETURN</h6>
+                        <p>A year after the first generation took the smartwatch world by storm with its timeless looks
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="service">
+                    <div class="icon"><i class="fa-solid fa-check-double"></i></div>
+                    <div>
+                        <h6>BEST QUALITY PRODUCTS</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolor quo tempore libero
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="service">
+                    <div class="icon"><i class="fa-solid fa-piggy-bank"></i></div>
+                    <div>
+                        <h6>SAVING YOUR MONEY</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolor quo tempore libero
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="service">
+                    <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div>
+                        <h6>FREE DELIVERY FROM $50</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolor quo tempore libero
+                            sequi
+                            nihil sapiente doloreme!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

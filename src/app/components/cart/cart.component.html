@@ -1,0 +1,82 @@
+<ng-container *ngIf="cartList.length!=0">
+    <div class="container cart-table ">
+        <div class="row ">
+            <table class=" container table-light table ">
+                <thead>
+                    <tr class="table-head">
+                        <th scope="col"></th>
+                        <th scope="col">Name</th>
+                        <th scope="col">price</th>
+                        <th scope="col">quantity</th>
+                        <th scope="col"> T.price</th>
+                        <th scope="col">remove</th>
+                    </tr>
+                </thead>
+                <tbody class="mt-5">
+                    <tr *ngFor="let item of cartList ">
+                        <td><img src="https://project-storeelc.herokuapp.com/{{item.Product.productImage}}"></td>
+                        <td class="title">{{item.Product.name}}</td>
+
+                        <td>$ {{item.Product.price}}</td>
+                        <td><input class="form-control" type="number" min="1" value="1" #inp
+                                (input)="calcTotalPrice(item,inp.value)" (input)="totalCart()">
+                        </td>
+                        <td> {{item.totalPrice|currency}}</td>
+                        <td scope="col"><button class="btn btn-danger" (click)="deleteProduct(item._id)">
+                                remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container-fluide mb-3 gx-0">
+                <div class="row">
+                    <div class="d-flex justify-content-between ">
+                        <button class="btn product-btn "><a class="link-style" routerLink="/products">continue shopping
+                            </a>
+                        </button>
+                        <button class="btn btn-danger" (click)="emptyCard()"> empty cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mb-3 mt-3 pe-0 ">
+                <div class="card col col-md-4 text-center ">
+                    <p>your total cart</p>
+                    <p>{{accumlatedPrice|currency}}</p>
+                    <button class="btn btn-success" (click)="checkOut(cartList)">checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="cartList.length==0">
+    <div class="container-fluid empty-card">
+        <div class="row ">
+            <div class=" row justify-content-center">
+                <img class=" col-12 " src="assets\images\ecart.png">
+                <div class="col-12 d-flex justify-content-center mt-3 show-product">
+                    <div class="product-show">
+                        <button class="btn product-btn "><a class="link-style" routerLink="/products">continue shopping
+                            </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="false">
+    <div class="container-fluid empty-card">
+        <div class="row ">
+            <div class=" row justify-content-center">
+                <img class=" col-12 " src="assets\images\pending-text-orange-grungy-round-stamp-vintage-206667742.jpg">
+                <div class="col-12 d-flex justify-content-center">your request is pending, we will confirm it soon</div>
+                <div class="col-12 d-flex justify-content-center mt-3 show-product">
+                    <div class="product-show">
+                        <button class="btn product-btn "><a class="link-style" routerLink="/products">continue shopping
+                            </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

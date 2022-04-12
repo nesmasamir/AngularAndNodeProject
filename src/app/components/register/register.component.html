@@ -1,0 +1,129 @@
+<div class="container-fluid">
+    <div class="container">
+      <div class="row bord">
+        <div class="col-md-6">
+          <img src="assets\images\register.jpeg" alt="">
+        </div>
+        <div class="col-md-6">
+          <div class="all">
+            <form [formGroup]="registerationForm" (ngSubmit)="onSubmit(registerationForm)">
+              <div class="form-group mb-3">
+                <label for="first_name" class="mb-1">
+                  First Name:
+                </label>
+                <input type="text" id="first_name"
+                  [class.is-invalid]="registerationForm.get('firstName')?.invalid && registerationForm.get('firstName')?.touched"
+                  class="form-control" formControlName="firstName">
+                <div class="text-danger"
+                  *ngIf="registerationForm.get('firstName')?.touched && registerationForm.get('firstName')?.invalid && registerationForm.get('firstName')?.errors">
+                  <small *ngIf="registerationForm.get('firstName')?.errors?.['required']">
+                    First Name is required
+                  </small>
+                  <small *ngIf="registerationForm.get('firstName')?.errors?.['minlength']">
+                    Mimun length is 3 characters</small>
+                </div>
+              </div>
+              <div class="form-group my-3">
+                <label for="second_name" class="mb-1">
+                  Second Name:
+                </label>
+                <input type="text" id="second_name"
+                  [class.is-invalid]="registerationForm.get('lastName')?.invalid && registerationForm.get('lastName')?.touched"
+                  class="form-control" formControlName="lastName">
+                <div class="text-danger"
+                  *ngIf="registerationForm.get('lastName')?.touched && registerationForm.get('lastName')?.invalid && registerationForm.get('secondName')?.errors">
+                  <small *ngIf="registerationForm.get('lastName')?.errors?.['required']">
+                    Second Name is required
+                  </small>
+                  <small *ngIf="registerationForm.get('lastName')?.errors?.['minlength']">
+                    Mimun length is 3 characters
+                  </small>
+                </div>
+              </div>
+              <div class="form-group my-3">
+                <label for="email" class="mb-1">
+                  Email:
+                </label>
+                <input type="text" id="email"
+                  [class.is-invalid]="registerationForm.get('email')?.invalid && registerationForm.get('email')?.touched"
+                  class="form-control" formControlName="email">
+                <div class="text-danger"
+                  *ngIf="registerationForm.get('email')?.touched && registerationForm.get('email')?.invalid && registerationForm.get('email')?.errors">
+                  <small *ngIf="registerationForm.get('email')?.errors?.['required']">
+                    Email is required
+                  </small>
+                  <small *ngIf="registerationForm.get('email')?.errors?.['pattern']">
+                    Invalid Email
+                  </small>
+                </div>
+              </div>
+              <div class="form-group my-3">
+                <label for="password" class="mb-1">
+                  Password:
+                </label>
+                <input type="password" id="password"
+                  [class.is-invalid]="registerationForm.get('password')?.invalid && registerationForm.get('password')?.touched"
+                  class="form-control" formControlName="password">
+                <div class="text-danger"
+                  *ngIf="registerationForm.get('password')?.touched && registerationForm.get('password')?.invalid && registerationForm.get('password')?.errors">
+                  <small *ngIf="registerationForm.get('password')?.errors?.['required']">
+                    Password is required
+                  </small>
+                </div>
+              </div>
+              <!-- <div formGroupName="address"> -->
+              <div class="form-group">
+                <label for="street" class="mb-1">
+                  Street:
+                </label>
+                <input type="text" id="street"
+                  [class.is-invalid]="registerationForm.get('street')?.invalid && registerationForm.get('street')?.touched"
+                  class="form-control" formControlName="street">
+                <div class="text-danger"
+                  *ngIf="registerationForm.get('street')?.touched && registerationForm.get('street')?.invalid && registerationForm.get('street')?.errors">
+                  <small *ngIf="registerationForm.get('street')?.errors?.['required']">
+                    Street is required
+                  </small>
+                </div>
+              </div>
+              <div class="form-group my-3">
+                <label for="city" class="mb-1">
+                  City:
+                </label>
+                <input type="text" id="city"
+                  [class.is-invalid]="registerationForm.get('city')?.invalid && registerationForm.get('city')?.touched"
+                  class="form-control" formControlName="city">
+                <div class="text-danger"
+                  *ngIf="registerationForm.get('city')?.touched && registerationForm.get('city')?.invalid && registerationForm.get('city')?.errors">
+                  <small *ngIf="registerationForm.get('city')?.errors?.['required']">
+                    City is required
+                  </small>
+                </div>
+              </div>
+              <div class="form-group my-3">
+                <label for="zipcode" class="mb-1">
+                  Zipcode:
+                </label>
+                <input type="text" id="zipcode"
+                  [class.is-invalid]="registerationForm.get('zipcode')?.invalid && registerationForm.get('zipcode')?.touched"
+                  class="form-control" formControlName="zipcode">
+                <div class="text-danger"
+                  *ngIf="registerationForm.get('zipcode')?.touched && registerationForm.get('zipcode')?.invalid && registerationForm.get('zipcode')?.errors">
+                  <small *ngIf="registerationForm.get('zipcode')?.errors?.['required']">
+                    Zipcode is required
+                  </small>
+                </div>
+              </div>
+              <!-- </div> -->
+              <div class="form-group my-4">
+                <button mat-flat-button color="primary" [disabled]="registerationForm.invalid" class="btn btn-primary">
+                  Sign up
+                </button>
+              </div>
+            </form>
+          <p *ngIf="newerrornessage" class="bg-danger text-light p-3">{{errormsg}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,26 @@
+.product-details{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.img-container{
+
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    box-shadow: 3px 1px 1 #bdbdbd;
+}
+
+.product-details img{
+    width: 500px;
+    height: 500px;
+}
+.card-title{
+    font-weight:400 ;
+    color: rgb(75, 75, 75);
+
+}
+p span{
+    font-weight: 500;
+    color: rgb(49, 49, 49);
+    
+}

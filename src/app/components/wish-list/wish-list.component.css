@@ -1,0 +1,36 @@
+table{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+td img{
+    width: 100px;
+    height: 100px;
+}
+
+td.title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    max-width: 5ch;
+}
+.empty-wishlist{
+    margin-bottom: 100px;
+}
+.empty-wishlist button{
+    background-color: #313131;
+    color: #ebe5e5;
+    outline: none;
+    padding: 5px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.empty-wishlist button:hover{
+
+    background-color: #757575;
+    transform: scale(1.1);
+    
+}
+

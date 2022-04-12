@@ -1,0 +1,20 @@
+
+footer{
+    position:relative;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+div a{
+    text-decoration: none;
+}
+div>p{
+    color: #f1f1f1;
+    font-weight: 500;
+}
+ul li a , .copy-right ,.icone{
+    color: #e0e0e0;
+}
+ul li a:hover{
+    color: #555555;
+}

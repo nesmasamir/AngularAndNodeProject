@@ -1,0 +1,7 @@
+.container-fluid{
+    margin: 100px 0 40px 0;
+}
+.btn{
+  border: none;
+  outline: none;
+}

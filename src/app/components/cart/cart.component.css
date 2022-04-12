@@ -1,0 +1,50 @@
+
+.table-head th{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+td.title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-width: 10ch; */
+}
+
+.cart-table {
+    margin-top: 6rem;
+}
+
+.link-style{
+    text-decoration: none;
+    color: #fff;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+input{
+    width: 70%;
+}
+div.empty-card{
+margin-top:60px ;
+margin-bottom:50px ;
+}
+
+
+ .product-btn{
+
+    background-color: #313131;
+    color: #ebe5e5;
+    outline: none;
+    padding: 5px 20px;
+    transition: all 0.5s;
+}
+ .product-btn:hover{
+
+    background-color: #757575;
+    transform: scale(1.1);
+    
+}
+
