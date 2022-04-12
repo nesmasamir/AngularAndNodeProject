@@ -1,0 +1,55 @@
+
+<div class="search-box ">
+    <div class="container">
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search.." [(ngModel)]="searchValue" 
+                (input)="searchProducts()">
+            <button class=" btn search-button text-center">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<section class="container products-container ">
+    <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
+        <div class="col" *ngFor="let product of productsArr |  paginate: { id:'listig-products',
+        itemsPerPage: 6,
+        currentPage: page,
+        totalItems: totalProducts}">
+            <div class="card ">
+                <div class="d-flex justify-content-center img-container pt-5">
+
+                    <a routerLink='/products/{{product._id}}'> <img
+                            src="https://project-storeelc.herokuapp.com/{{product.productImage}}" class="card-img-top"
+                            alt="..." style="width: 250px; height: 250px; "></a>
+                </div>
+                <div class="card-body row mt-3 card-content product-content">
+                    <div class="">
+                        <a routerLink='/products/{{product._id}}'>
+                            <h5 class="card-title">{{product.name}}</h5>
+                        </a>
+                        <p class="card-text"> ${{product.price}}</p>
+                        <div class="d-flex justify-content-between">
+
+                            <button class="btn btn-primary" (click)="addToCart(product)">Add to cart</button>
+                            <button class="btn ">
+                                <i  class="fa-regular fa-heart fav-icon"
+                                    (click)="addToWishList(product)"></i>
+                                <!-- <i *ngIf="addedToWishList" class="fa-solid fa-heart fav-icon "
+                                    (click)="deleteWishListItem(product.id)"></i> -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<div class=" mt-4 mb-5 d-flex justify-content-center">
+    <pagination-controls class=" " id="listig-products" [maxSize]="10" [directionLinks]="true"
+        (pageChange)="page=$event">
+    </pagination-controls>
+</div>

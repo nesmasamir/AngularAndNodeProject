@@ -1,0 +1,187 @@
+{
+  "wishlist": [
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 1
+    },
+    {
+      "_id": "625196c02f15e08edaa030ea",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads/MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 2
+    },
+    {
+      "_id": "625196c02f15e08edaa030ea",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads/MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 3
+    },
+    {
+      "_id": "625196c02f15e08edaa030ea",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads/MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 4
+    },
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 5
+    },
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 6
+    },
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 7
+    },
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 8
+    },
+    {
+      "_id": "62524ec17acfed7785c74796",
+      "name": "Dashboard test",
+      "price": 100,
+      "description": "<p><strong style=\"color: rgb(0, 0, 0);\">Lorem Ipsum</strong><span style=\"color: rgb(0, 0, 0);\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>",
+      "productImage": "uploads/2022-04-10T03:28:01.630Zpaper-cup-with-coffee-mock-up_23-2148884502.jpg",
+      "__v": 0,
+      "id": 9
+    },
+    {
+      "_id": "6253e654af2167d8991bc163",
+      "name": "test2",
+      "price": 500,
+      "description": "...",
+      "productImage": "uploads/2022-04-11T08:26:59.453Zpaper-cup-with-coffee-mock-up_23-2148884502.jpg",
+      "__v": 0,
+      "id": 10
+    },
+    {
+      "_id": "6253e654af2167d8991bc163",
+      "name": "test2",
+      "price": 500,
+      "description": "...",
+      "productImage": "uploads/2022-04-11T08:26:59.453Zpaper-cup-with-coffee-mock-up_23-2148884502.jpg",
+      "__v": 0,
+      "id": 11
+    }
+  ],
+  "cartitems": [
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 1
+    },
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 2
+    },
+    {
+      "_id": "6250af89af1e60eb1acd573b",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads/MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 3
+    },
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 4
+    },
+    {
+      "_id": "62524ec17acfed7785c74796",
+      "name": "Dashboard test",
+      "price": 100,
+      "description": "<p><strong style=\"color: rgb(0, 0, 0);\">Lorem Ipsum</strong><span style=\"color: rgb(0, 0, 0);\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>",
+      "productImage": "uploads/2022-04-10T03:28:01.630Zpaper-cup-with-coffee-mock-up_23-2148884502.jpg",
+      "__v": 0,
+      "id": 5
+    },
+    {
+      "_id": "6253e654af2167d8991bc163",
+      "name": "test2",
+      "price": 500,
+      "description": "...",
+      "productImage": "uploads/2022-04-11T08:26:59.453Zpaper-cup-with-coffee-mock-up_23-2148884502.jpg",
+      "__v": 0,
+      "id": 6
+    },
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 7
+    },
+    {
+      "_id": "62512dbbadea78a80d7e7cd9",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads\\MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 8
+    },
+    {
+      "_id": "625196c02f15e08edaa030ea",
+      "name": "washing machine",
+      "price": 7000,
+      "description": "d;laskflsfpsdjfpsd",
+      "productImage": "uploads/MCSA02472928-WAW325-X0-EG-PGA3-def.jpg",
+      "__v": 0,
+      "id": 9
+    }
+  ],
+  "orders": []
+}

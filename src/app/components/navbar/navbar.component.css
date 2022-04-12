@@ -1,0 +1,37 @@
+.icon{
+    color: #fff;
+    width: 100px;
+}
+nav{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+    background-color: #3e4551;
+}
+
+.cart-container{
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.notification , .wish-notification{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 33;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    background-color: #ff4242;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+}
+.wish-container{
+    position: relative;
+}
+
+

@@ -1,0 +1,14 @@
+<!-- <div class="">
+  <span class=" ">Search By Product Name:  </span>
+  <input class="" type="text" [(ngModel)]="searchValue" (input)="onTextValueChanged()" >
+</div> -->
+<div class="search-box ">
+    <div class="container">
+        <div class="search-box">
+           <input type="text" class="search-input" placeholder="Search.."  [(ngModel)]="searchValue" (input)="onTextValueChanged()">
+           <button class=" btn search-button text-center">
+             <i class="fas fa-search"></i>
+           </button>
+        </div>
+     </div>
+</div>
